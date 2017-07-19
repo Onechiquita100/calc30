@@ -17,6 +17,7 @@ html {box-sizing: border-box;}
   display: flex;
   flex-wrap: wrap;
   width: 400px;
+  box-shadow: 0;
 
 }
 
@@ -31,6 +32,7 @@ button {
   background-color: rgb(94, 180, 73);
   border: .15px rgb(122, 199, 111) solid;
   border-collapse: collapse;
+  outline: 0;
 }
 
 button:active {
@@ -48,12 +50,21 @@ button:active {
 .light:active {
   color: white;
 
+}
 
+.light:hover {
+  color: white;
 }
 
 #result {
-  width: 300px;
+  width: 285px;
   height: 100px;
-  display: inline-flex;
+  display: block;
   background-color: rgb(94, 180, 73);
+  color: white;
+  font-size: 33px;
+  text-align:right;
+  line-height: 90px;
+  padding-right: 15px;
+
 }

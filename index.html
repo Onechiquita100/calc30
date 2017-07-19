@@ -4,31 +4,32 @@
   <meta charset="utf-8">
   <title>Document</title>
   <link rel="stylesheet" href="main.css"/>
+  <script src="main.js"></script>
 </head>
 <body>
   <div class ="calc">
-    <button>C</button>
+    <button onclick="clearButt()">C</button>
     <div id="result"></div>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button class="light">/</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button class="light">X</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button class="light">-</button>
-    <button>0</button>
-    <button>.</button>
-    <button>=</button>
-    <button class="light">+</button>
+    <button onclick="addNum('7')">7</button>
+    <button onclick="addNum('8')">8</button>
+    <button onclick="addNum('9')">9</button>
+    <button class="light" onclick="oppe('/')">/</button>
+    <button onclick="addNum('4')">4</button>
+    <button onclick="addNum('5')">5</button>
+    <button onclick="addNum('6')">6</button>
+    <button class="light" onclick="oppe('*')">*</button>
+    <button onclick="addNum('1')">1</button>
+    <button onclick="addNum('2')">2</button>
+    <button onclick="addNum('3')">3</button>
+    <button class="light" onclick="oppe('-')">-</button>
+    <button onclick="addNum('0')">0</button>
+    <button onclick="addNum('.')">.</button>
+    <button onclick="solve('=')">=</button>
+    <button class="light" onclick="oppe('+')">+</button>
   </div>
 
 
-  <script src="main.js"></script>
+
 
 
 </body>
